@@ -1,0 +1,105 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-bg {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 360px solid #7ac1e4;
+}
+
+.mountain-top {
+    position: absolute;
+    right: -130px;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 154px solid #ceeaf6;
+}
+
+.mountain-cap-1,
+.mountain-cap-2,
+.mountain-cap-3 {
+    position: absolute;
+    top: 150px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #ceeaf6;
+}
+
+.mountain-cap-1 {
+    left: -125px;
+}
+
+.mountain-cap-2 {
+    left: -25px;
+}
+
+.mountain-cap-3 {
+    left: 29px;
+}
+
+.cloud,
+.cloud:before,
+.cloud:after {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+}
+
+.cloud {
+    bottom: 70vh;
+    -webkit-animation: cloud 50s infinite linear;
+    animation: cloud 50s infinite linear;
+}
+
+@-webkit-keyframes cloud {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 1000px;
+    }
+}
+
+@keyframes cloud {
+
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 1000px;
+    }
+}
+
+.cloud:before {
+    content: '';
+    left: 50px;
+}
+
+.cloud:after {
+    content: '';
+    left: 25px;
+    top: -10px;
+}

@@ -1,0 +1,46 @@
+.navbar {
+    height: 15vh;
+    width: 100vw;
+    max-width: 100%;
+    position: sticky;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 10px;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.logo {
+    margin-right: 20vw;
+}
+
+.nav-link {
+    display: block;
+    font-size: 1.25rem;
+    color: grey;
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.hover-effect {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+}
+
+.nav-link,
+.hover-effect {
+    transition: all .35s ease-in-out;
+}

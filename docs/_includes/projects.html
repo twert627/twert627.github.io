@@ -1,0 +1,15 @@
+<div id="projects" class="projects">
+    <h1 class="projects-title">My Projects</h1>
+    <div class="projects-container">
+        {% for repo in site.data.repos %}
+        <a target="_blank" rel="noopener noreferrer" href="{{ repo.html_url }}" class="project-card">
+            <header>
+                <h2>{{ repo.name }}</h2>
+            </header>
+            <div class="content">
+                <p>{{ repo.description }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

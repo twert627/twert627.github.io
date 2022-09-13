@@ -1,0 +1,32 @@
+.about {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: #7ac1e4;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 4rem;
+    color: grey;
+}
+
+.about-paragraph {
+    text-align: left;
+    width: 30vw;
+    height: 100vh;
+    margin-top: -65vh;
+    margin-left: 5%;
+    color: white;
+}
+
+.about > ul {
+    margin-top: -70vh;
+    margin-left: 6%;
+    color: white;
+}
+
+.about-image {
+    border-radius: 50%;
+    margin-left: 60vw;
+}
