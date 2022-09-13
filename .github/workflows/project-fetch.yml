@@ -1,6 +1,8 @@
 name: Karl
 
 on: 
+  workflow_dispatch:
+    # For manual workflow run
   schedule: 
     # 55 minutes on every hour
     - cron: '55 * * * *'
