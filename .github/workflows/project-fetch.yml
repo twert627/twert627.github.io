@@ -5,7 +5,7 @@ on:
     # For manual workflow run
   schedule: 
     # 55 minutes on every hour
-    - cron: '55 * * * *'
+    - cron: '0 22 * * *'
 
 jobs:
   fetch:
